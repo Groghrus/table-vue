@@ -1,0 +1,67 @@
+:root {
+  font-size: 10px;
+  @include media-breakpoint-down(lg) {
+    font-size: 8px;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: $bg-color;
+  color: $secondary-color;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $secondary-color;
+  background-color: transparent;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: $bg-color;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+button, input, label, select {
+  @include button();
+}
+.form-border {
+  border: 1px solid $form-border;
+  border-radius: 3px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.5px;
+}
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: $complete;
+  &-red {
+    background: $canceled;
+  }
+
+  &-blue {
+    background: $progress;
+  }
+}
+
+
+
+
