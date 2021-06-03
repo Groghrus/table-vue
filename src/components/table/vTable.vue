@@ -127,6 +127,13 @@ export default {
       display: none;
     }
   }
-
+  tbody {
+    tr {
+      border-bottom: 1px solid #D9E0EA;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
 }
 </style>
